@@ -23,7 +23,8 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/recommend", {
+    // const res = await fetch("http://localhost:5000/recommend", {
+    const res = await fetch("https://neighborfit-backend.onrender.com/recommend", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(preferences),
