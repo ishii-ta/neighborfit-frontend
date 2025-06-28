@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"; // 👈 make sure this line is present to include styles
+import "./App.css";
 
 const defaultPrefs = {
   safety: 3,
