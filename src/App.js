@@ -23,12 +23,12 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const res = await fetch("http://localhost:5000/recommend", {
     const res = await fetch("https://neighborfit-backend-7ilg.onrender.com/recommend", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(preferences),
     });
+
 
     const data = await res.json();
     setResults(data);
